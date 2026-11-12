@@ -27,15 +27,56 @@
         input:checked{
             outline: 2px greenyellow;
         }
+
+        .tip::before {
+  content: "💡 ";
+}
+
+.obligatorio::after {
+  content: " *";
+  color: red;
+}
+
+input::placeholder{
+    color: blue
+}
+
+/*SELECTORES COMBIANDOS*/
+/*Selector descendiente  - NO USARLO SOLO ESTA COMO REFERENCIA */
+article P{
+    border: 1px solid red;
+}
+
+/*selector de hijo directo*/
+
+article > strong{
+    color: red;
+}
+
+p > strong{
+    color: blue;
+}
+
     </style>
 </head>
 <body>
-    <h1>Pseudocodigo</h1>
+    <h1>Pseudo Clases</h1>
     <p>Pasa el cursor por el botón y haz clic en el campo.</p>
         <input type="text" placeholder="Escribe aquí" />
         <button>Enviar</button>
         <button disabled>No disponible</button>
         <input type="checkbox"> Apagado
     
+    <h1>Pseudo Elementos</h1>
+    <p class="tip">Guarda tus archivos con frecuencia.</p>
+    <p class="obligatorio">Correo</p>
+
+    <input type="text" placeholder="¡Hola, como estas?" />
+
+    <article>
+        <h1>Selectores combinados</h1>
+        <p>Mi párrafo</p>
+        <p>Segundo párrafo con <strong> texto importante </strong></p>
+    </article>
 </body>
 </html>
