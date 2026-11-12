@@ -72,6 +72,67 @@ h1, h2, h3{
     background-color: coral;
 }
 
+/*Herencia*/
+
+article{
+    color: red;
+    font-family: Arial;
+}
+
+body{
+    color: rgb(39,199, 21);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a, button{
+    color: inherit;
+    font-family: inherit;
+}
+
+
+/*Cascada*/
+header {
+  color: green;
+}
+
+.texto {
+  color: red;
+}
+
+#cabecera {
+  color: blue;
+}
+
+/*Unidades de medida*/
+/*Absolutas: px, cm, in --> siempre miden lo mismo*/
+/*Relativas: em, rem, %, vw, vh(+ modernas y flexibles )*/
+
+
+h2{
+    color: tomato;
+    color: #ff6347;
+    color: rgb(255, 99, 71);
+    color: hsl(9, 100%, 64%);
+}
+
+
+button { color:  white; padding: 12px 24px; border: none;}
+
+button{
+    background-color: hsl(169, 82%, 27%);
+}
+
+button:hover{
+    background-color: hsl(169, 82%, 20%);
+}
+
+
+/*transparencia*/
+
+
+h1{
+    background-color: rgba(0, 0, 0, 0.5);
+}
     </style>
 </head>
 <body>
@@ -90,8 +151,24 @@ h1, h2, h3{
 
     <article>
         <h1>Selectores combinados</h1>
+        <h2>Bienvenido</h2>
         <p>Mi párrafo</p>
         <p>Segundo párrafo con <strong> texto importante </strong></p>
     </article>
+
+    <section>
+
+    </section>
+
+    <h1>Cascada</h1>
+    
+    <p>¿Rojo o azul? Gana la regla escrita al final.</p>
+    <header id="cabecera" class="texto">¿De qué color soy?</header>
+
+    <h1>Colores </h1>
+    <h2>Soy color tomate</h2>
+    <p>Borra tres de las cuatro líneas de color: el título se verá igual.</p>
+
+    <button></button>
 </body>
 </html>
