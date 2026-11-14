@@ -1,0 +1,67 @@
+/*TODO: TERMINAR EL DISEÑP CONCSS de este 
+ejercicico: social links*/
+
+
+body {
+    
+  /* TODO: Añadan la fuente 'Karla' desde google fonts */
+
+  background-color: hsl(0, 0%, 8%);
+  display: flex; /* flexbox */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  font-family: "Inter", sans-serif;
+}
+
+.perfil{
+  width: 400px;
+
+  background-color: hsl(0, 0%, 12%);
+
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.perfil img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto 24px;
+}
+
+h1{
+  margin: 0;
+  margin-bottom: 1px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+h3{
+  margin: 0;
+  margin-bottom: 1px;
+  color: hsl(75, 94%, 57%);
+  text-align: center;
+}
+
+p{
+  margin: 24px;
+  margin-bottom: 24px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+
+}
+
+
+.enlaces a {
+    display: block;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
